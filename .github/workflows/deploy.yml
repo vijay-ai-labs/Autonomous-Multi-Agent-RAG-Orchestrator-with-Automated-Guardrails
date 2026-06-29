@@ -3,6 +3,7 @@ name: Deploy to EC2
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -10,7 +11,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Check deploy prerequisites
+        id: prereqs
+        run: |
+          if [ -z "$EC2_HOST" ]; then
+            echo "EC2_HOST secret not set — skipping deploy (no EC2 instance configured)"
+            echo "configured=false" >> $GITHUB_OUTPUT
+          else
+            echo "configured=true" >> $GITHUB_OUTPUT
+          fi
+        env:
+          EC2_HOST: ${{ secrets.EC2_HOST }}
+
       - name: Deploy via SSH
+        if: steps.prereqs.outputs.configured == 'true'
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.EC2_HOST }}
