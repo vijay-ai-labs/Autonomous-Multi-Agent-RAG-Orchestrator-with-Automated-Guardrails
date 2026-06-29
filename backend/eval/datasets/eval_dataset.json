@@ -1,0 +1,182 @@
+[
+  {
+    "question": "How many vacation days do full-time employees receive per year?",
+    "ground_truth": "Full-time employees receive 15 vacation days per year, and part-time employees receive a prorated amount.",
+    "answer": "Full-time employees receive 15 vacation days per year, accruing at 1.25 days per month [Source 1]. Part-time employees receive a prorated amount based on their scheduled weekly hours [Source 2].",
+    "contexts": [
+      "Full-time employees are entitled to 15 days of paid vacation per year, accruing at 1.25 days per month.",
+      "Part-time employees receive vacation days on a prorated basis calculated from their scheduled weekly hours."
+    ]
+  },
+  {
+    "question": "How many sick days are employees entitled to each year?",
+    "ground_truth": "Employees are entitled to 10 paid sick days per year, which do not roll over.",
+    "answer": "Employees are entitled to 10 paid sick days per calendar year [Source 1]. Unused sick days do not roll over into the following year [Source 2].",
+    "contexts": [
+      "All regular employees receive 10 paid sick days per calendar year.",
+      "Sick leave does not carry over; any unused balance is forfeited at year end."
+    ]
+  },
+  {
+    "question": "What is the company's remote work policy?",
+    "ground_truth": "Employees may work remotely up to three days per week with manager approval.",
+    "answer": "Employees may work remotely up to three days per week, subject to manager approval [Source 1]. Fully remote arrangements require department head sign-off and a signed remote work agreement [Source 2].",
+    "contexts": [
+      "Under the hybrid policy, employees may work from home up to three days per week with their manager's approval.",
+      "Fully remote arrangements must be approved by the department head and documented in a signed remote work agreement."
+    ]
+  },
+  {
+    "question": "How do I request parental leave?",
+    "ground_truth": "Submit a parental leave request through the HR portal at least 30 days before the expected leave date.",
+    "answer": "To request parental leave, submit a request through the HR portal at least 30 days before your expected leave start date [Source 1]. Eligible employees receive up to 12 weeks of paid parental leave [Source 2].",
+    "contexts": [
+      "Parental leave requests must be submitted via the HR portal no later than 30 days before the intended start date.",
+      "Eligible employees are granted up to 12 weeks of paid parental leave following the birth or adoption of a child."
+    ]
+  },
+  {
+    "question": "What is the probationary period for new employees?",
+    "ground_truth": "New employees serve a 90-day probationary period.",
+    "answer": "New employees serve a 90-day probationary period from their start date [Source 1]. A performance review is conducted at the end of probation to confirm continued employment [Source 2].",
+    "contexts": [
+      "All new hires are subject to a 90-day probationary period beginning on their first day of employment.",
+      "At the conclusion of the probationary period, the manager conducts a review to confirm the employee's continued employment."
+    ]
+  },
+  {
+    "question": "What is the process for resetting a forgotten work password?",
+    "ground_truth": "Use the self-service portal at reset.company.com or contact the IT help desk if locked out.",
+    "answer": "To reset a forgotten work password, visit the self-service portal at reset.company.com and verify your identity with multi-factor authentication [Source 1]. If your account is locked, contact the IT help desk at extension 4357 [Source 2].",
+    "contexts": [
+      "Employees can reset forgotten passwords through the self-service portal at reset.company.com after completing multi-factor authentication.",
+      "If an account is locked out, employees should call the IT help desk at extension 4357 for assistance."
+    ]
+  },
+  {
+    "question": "What software is approved for installation on company laptops?",
+    "ground_truth": "Only software listed in the approved software catalog may be installed; other software requires an IT ticket.",
+    "answer": "Only applications listed in the approved software catalog may be installed on company laptops [Source 1]. Installing any other software requires submitting an IT request ticket for security review [Source 2].",
+    "contexts": [
+      "Employees may install only applications that appear in the company's approved software catalog.",
+      "Any software not in the catalog requires an IT request ticket and a security review before installation."
+    ]
+  },
+  {
+    "question": "What is the policy on using personal devices for work?",
+    "ground_truth": "Personal devices must be enrolled in mobile device management before accessing company data.",
+    "answer": "Personal devices must be enrolled in the company's mobile device management (MDM) system before they can access company email or data [Source 1]. The MDM enforces encryption and remote wipe capabilities [Source 2].",
+    "contexts": [
+      "Under the BYOD policy, personal devices must be enrolled in the company mobile device management system before accessing any company data or email.",
+      "The MDM solution enforces device encryption and allows IT to remotely wipe company data if a device is lost or stolen."
+    ]
+  },
+  {
+    "question": "How often must employees change their network password?",
+    "ground_truth": "Network passwords must be changed every 90 days and meet complexity requirements.",
+    "answer": "Network passwords must be changed every 90 days [Source 1]. Each password must be at least 12 characters and include uppercase, lowercase, a number, and a symbol [Source 2].",
+    "contexts": [
+      "Company policy requires that network passwords be changed at least once every 90 days.",
+      "Passwords must contain a minimum of 12 characters including uppercase and lowercase letters, at least one number, and one special character."
+    ]
+  },
+  {
+    "question": "How do I report a suspected phishing email?",
+    "ground_truth": "Forward suspected phishing emails to phishing@company.com and do not click any links.",
+    "answer": "If you receive a suspected phishing email, do not click any links or open attachments and forward the message to phishing@company.com [Source 1]. The security team will investigate and notify you of the outcome [Source 2].",
+    "contexts": [
+      "Suspected phishing emails should be forwarded to phishing@company.com without clicking links or opening attachments.",
+      "The information security team investigates reported phishing messages and follows up with the reporter on the results."
+    ]
+  },
+  {
+    "question": "What does the code of conduct say about conflicts of interest?",
+    "ground_truth": "Employees must disclose any actual or potential conflict of interest to their manager and the compliance team.",
+    "answer": "Employees must promptly disclose any actual or potential conflict of interest to both their manager and the compliance team [Source 1]. Failure to disclose a conflict may result in disciplinary action [Source 2].",
+    "contexts": [
+      "The code of conduct requires employees to disclose any actual or potential conflict of interest to their manager and the compliance department as soon as it arises.",
+      "Failure to disclose a known conflict of interest is a violation of the code of conduct and may lead to disciplinary action up to termination."
+    ]
+  },
+  {
+    "question": "What is the company's policy on accepting gifts from vendors?",
+    "ground_truth": "Employees may accept gifts valued under 50 dollars; anything higher must be reported and may need to be declined.",
+    "answer": "Employees may accept unsolicited gifts from vendors only if they are valued under 50 dollars [Source 1]. Gifts exceeding that value must be reported to the compliance team and may need to be returned or declined [Source 2].",
+    "contexts": [
+      "The anti-bribery policy permits employees to accept nominal vendor gifts valued at less than 50 dollars.",
+      "Any gift valued at 50 dollars or more must be reported to compliance, which determines whether it should be returned or declined."
+    ]
+  },
+  {
+    "question": "What are the rules about social media and company confidentiality?",
+    "ground_truth": "Employees must not disclose confidential company information on social media and should not speak on behalf of the company without authorization.",
+    "answer": "Employees must never disclose confidential or proprietary company information on personal social media accounts [Source 1]. Employees may not represent themselves as speaking on behalf of the company without prior authorization from communications [Source 2].",
+    "contexts": [
+      "The social media policy prohibits sharing confidential, proprietary, or non-public company information on any personal social media platform.",
+      "Employees must not claim to speak on behalf of the company on social media unless they have been authorized by the corporate communications team."
+    ]
+  },
+  {
+    "question": "How do I report a workplace safety hazard?",
+    "ground_truth": "Report safety hazards immediately to your supervisor or through the safety reporting form.",
+    "answer": "Report any workplace safety hazard immediately to your supervisor or by submitting the online safety reporting form [Source 1]. Imminent dangers should also be reported to facilities for urgent action [Source 2].",
+    "contexts": [
+      "Employees are required to report workplace safety hazards immediately to their supervisor or through the online safety reporting form.",
+      "Hazards that pose an imminent danger must additionally be reported to the facilities team so urgent corrective action can be taken."
+    ]
+  },
+  {
+    "question": "What training is mandatory for all new hires?",
+    "ground_truth": "New hires must complete security awareness, code of conduct, and anti-harassment training within their first 30 days.",
+    "answer": "All new hires must complete security awareness training, code of conduct training, and anti-harassment training within their first 30 days of employment [Source 1]. Completion is tracked in the learning management system [Source 2].",
+    "contexts": [
+      "New employees are required to complete security awareness, code of conduct, and anti-harassment training during their first 30 days.",
+      "Training completion for all mandatory courses is recorded and monitored in the company learning management system."
+    ]
+  },
+  {
+    "question": "How do I enroll in the company health insurance plan?",
+    "ground_truth": "Enroll through the benefits portal within 30 days of your start date or during open enrollment.",
+    "answer": "You can enroll in the company health insurance plan through the benefits portal within 30 days of your start date [Source 1]. After that window, changes are only allowed during annual open enrollment or after a qualifying life event [Source 2].",
+    "contexts": [
+      "New employees may enroll in the health insurance plan through the benefits portal within 30 days of their start date.",
+      "Outside the initial enrollment window, coverage changes are permitted only during open enrollment or following a qualifying life event such as marriage or the birth of a child."
+    ]
+  },
+  {
+    "question": "How much does the company contribute to the 401(k) retirement plan?",
+    "ground_truth": "The company matches 100 percent of employee contributions up to 4 percent of salary.",
+    "answer": "The company matches 100 percent of employee 401(k) contributions up to 4 percent of eligible salary [Source 1]. Employer matching contributions vest after two years of service [Source 2].",
+    "contexts": [
+      "The company provides a 401(k) match of 100 percent on employee contributions up to 4 percent of eligible salary.",
+      "Employer matching contributions become fully vested after the employee completes two years of service."
+    ]
+  },
+  {
+    "question": "What dental and vision benefits are offered?",
+    "ground_truth": "The company offers dental coverage including two annual cleanings and vision coverage including one annual eye exam.",
+    "answer": "The dental plan covers two preventive cleanings per year and a portion of major procedures [Source 1]. The vision plan covers one annual eye exam and an allowance toward glasses or contact lenses [Source 2].",
+    "contexts": [
+      "The dental benefit includes two covered preventive cleanings annually and partial coverage for major dental procedures.",
+      "The vision benefit covers one comprehensive eye exam per year plus an allowance applied toward eyeglasses or contact lenses."
+    ]
+  },
+  {
+    "question": "Is there an employee assistance program available?",
+    "ground_truth": "Yes, the employee assistance program offers free confidential counseling sessions to all employees.",
+    "answer": "Yes, the company offers an Employee Assistance Program (EAP) that provides free and confidential counseling sessions to all employees and their household members [Source 1]. The EAP is available 24 hours a day by phone [Source 2].",
+    "contexts": [
+      "The Employee Assistance Program provides employees and their household members with free, confidential counseling sessions.",
+      "EAP support is available 24 hours a day, seven days a week, through a dedicated confidential phone line."
+    ]
+  },
+  {
+    "question": "What is the company's policy on overtime pay?",
+    "ground_truth": "Non-exempt employees receive 1.5 times their regular rate for hours worked beyond 40 in a week.",
+    "answer": "Non-exempt employees are paid overtime at 1.5 times their regular hourly rate for any hours worked beyond 40 in a workweek [Source 1]. Overtime must be approved in advance by a manager [Source 2].",
+    "contexts": [
+      "Non-exempt employees earn overtime pay at one and one-half times their regular rate for hours worked over 40 in a single workweek.",
+      "All overtime must be authorized in advance by the employee's manager before the additional hours are worked."
+    ]
+  }
+]

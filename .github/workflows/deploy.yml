@@ -1,0 +1,26 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            set -e
+            cd ~/app
+            git pull origin main
+            docker compose -f infra/docker-compose.yml -f infra/docker-compose.prod.yml pull
+            docker compose -f infra/docker-compose.yml -f infra/docker-compose.prod.yml up -d --build
+            docker compose -f infra/docker-compose.yml exec -T backend alembic upgrade head
+            echo "Deploy complete: $(date)"

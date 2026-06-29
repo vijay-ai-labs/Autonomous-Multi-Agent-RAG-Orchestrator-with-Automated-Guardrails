@@ -1,0 +1,30 @@
+# Environment
+.env
+.env.local
+.env.*.local
+*.local
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# Build artifacts
+dist/
+
+# Node / frontend
+node_modules/
+.next/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tooling
+.superpowers/
+.claude/

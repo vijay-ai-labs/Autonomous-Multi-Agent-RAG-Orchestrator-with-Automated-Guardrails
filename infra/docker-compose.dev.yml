@@ -1,0 +1,14 @@
+# Dev overrides: bind-mount backend source for hot reload.
+# Usage:
+#   docker compose -f infra/docker-compose.yml -f infra/docker-compose.dev.yml up backend
+
+name: rag-orchestrator
+
+services:
+  backend:
+    volumes:
+      - ../backend:/app
+    environment:
+      APP_ENV: development
+      LOG_LEVEL: DEBUG
+    command: ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
